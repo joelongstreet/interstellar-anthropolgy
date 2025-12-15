@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cereolithus magistralis · Mentor Cactus</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --bg: #f6f1e7; /* warm paper */
+        --ink: #1f1f1f; /* near-black */
+        --muted: #4a4a4a; /* soft text */
+        --rule: rgba(0, 0, 0, 0.12);
+        --card: rgba(255, 255, 255, 0.35);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Bitter", serif;
+        color: var(--ink);
+        background: radial-gradient(
+            1200px 600px at 10% 0%,
+            rgba(0, 0, 0, 0.03),
+            transparent 60%
+          ),
+          radial-gradient(
+            900px 500px at 90% 10%,
+            rgba(0, 0, 0, 0.02),
+            transparent 55%
+          ),
+          var(--bg);
+        line-height: 1.55;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: geometricPrecision;
+      }
+
+      .wrap {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 28px 18px 60px;
+      }
+
+      header {
+        padding-top: 8px;
+      }
+
+      .kicker {
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      h1 {
+        margin: 10px 0 6px;
+        font-size: 34px;
+        letter-spacing: -0.02em;
+        line-height: 1.15;
+      }
+
+      .latin {
+        margin: 0 0 14px;
+        font-size: 18px;
+        color: var(--muted);
+      }
+
+      .meta {
+        border-top: 1px solid var(--rule);
+        border-bottom: 1px solid var(--rule);
+        padding: 14px 0;
+        margin: 18px 0 22px;
+        font-size: 14px;
+        color: var(--muted);
+      }
+
+      .meta strong {
+        color: var(--ink);
+        font-weight: 650;
+      }
+      .meta .row {
+        margin: 6px 0;
+      }
+
+      .section {
+        margin-top: 22px;
+      }
+
+      .section h2 {
+        margin: 0 0 8px;
+        font-size: 13px;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+      }
+
+      p {
+        margin: 0 0 12px;
+        font-size: 16px;
+      }
+
+      .gallery {
+        margin-top: 18px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      figure {
+        margin: 0;
+        overflow: hidden;
+        border-radius: 5px;
+      }
+
+      figcaption {
+        margin-top: 10px;
+        font-size: 13px;
+        line-height: 1.4;
+        color: var(--muted);
+        max-width: 92%;
+      }
+
+      .cap-title {
+        font-style: italic;
+        color: var(--ink);
+      }
+
+      footer {
+        margin-top: 30px;
+        padding-top: 16px;
+        border-top: 1px solid var(--rule);
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      @media (max-width: 420px) {
+        h1 {
+          font-size: 30px;
+        }
+        p {
+          font-size: 16px;
+        }
+        .wrap {
+          padding: 22px 16px 54px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          scroll-behavior: auto !important;
+        }
+      }
+
+      .media {
+        width: 100%;
+        height: auto;
+        display: block;
+        background: transparent;
+        filter: grayscale(1);
+        mix-blend-mode: multiply;
+        opacity: 0.92;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="wrap">
+      <header>
+        <div class="kicker">Archival record · Kaelune-7</div>
+        <h1><em>Cereolithus magistralis</em></h1>
+        <div class="latin">Mentor Cactus</div>
+
+        <div class="meta" role="note" aria-label="Specimen metadata">
+          <div class="row">
+            <strong>Classification:</strong> Xenoflora, Order Lithophyta
+          </div>
+          <div class="row">
+            <strong>Native to:</strong> the basalt flats of Kaelune-7
+          </div>
+        </div>
+      </header>
+
+      <figure>
+        <img src="img/cactus.png" class="media" />
+        <figcaption>
+          <span class="cap-title">Cereolithus magistralis</span><br />
+          Cultivated specimen, mature form.
+        </figcaption>
+      </figure>
+
+      <section class="section" id="overview">
+        <h2>Overview</h2>
+        <p>
+          <em>Cereolithus magistralis</em> is a slow-growing, columnar cactus
+          native to the basalt plains and fractured stone fields of Kaelune-7.
+          It is distinguished by a paired biological structure composed of two
+          autonomous organisms that grow in close physical association along a
+          shared vertical axis.
+        </p>
+        <p>
+          At a distance, the plant appears singular. Closer observation reveals
+          an external structural form enclosing a second, internally situated
+          organism. Though spatially interdependent, the two remain biologically
+          distinct.
+        </p>
+      </section>
+
+      <section class="section" id="description">
+        <h2>Physical Description</h2>
+        <p>
+          The outer organism of <em>C. magistralis</em> develops a ribbed,
+          lattice-like structure with high mineral density and limited chromatic
+          variation. Its growth favors structural continuity, with evenly
+          distributed vertical ribs that channel heat inward and release it
+          gradually during periods of cooling. This form provides environmental
+          buffering in regions marked by extreme thermal fluctuation and limited
+          surface water.
+        </p>
+        <p>
+          Within this framework, a second organism grows independently. The
+          inner cactus occupies the negative space defined by the outer shell,
+          exhibiting greater chromatic diversity and surface variation. Its form
+          follows the same axial logic as the outer structure while diverging in
+          texture, rhythm, and coloration.
+        </p>
+        <p>
+          Both organisms store water and trace silicates within porous internal
+          matrices, contributing to their shared resilience.
+        </p>
+        <figure>
+          <img src="img/closeup-cactus.png" class="media" />
+          <figcaption>
+            <span class="cap-title">Structural detail</span><br />
+            Rib junctions and porous lattice of the outer organism.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="section" id="symbiotic">
+        <h2>Symbiotic Structure</h2>
+        <p>
+          <em>Cereolithus magistralis</em> does not represent a single organism
+          with differentiated tissues, but a paired system of two fully
+          independent plants occupying a shared form.
+        </p>
+        <p>
+          The outer organism establishes first, defining the overall silhouette
+          and spatial constraints. Once present, the inner organism develops
+          within these constraints, expanding upward and outward while remaining
+          physically separate. No direct vascular, root, or structural
+          connections between the two have been identified.
+        </p>
+        <p>
+          Despite their proximity, neither organism appears to dominate or
+          subsume the other.
+        </p>
+      </section>
+
+      <section class="section" id="mimetic">
+        <h2>Mimetic Growth</h2>
+        <p>
+          Field observations indicate that the inner cactus mirrors the growth
+          patterns of the outer organism. Subtle irregularities in rib spacing,
+          curvature, compression, and vertical rhythm are echoed internally,
+          though never duplicated exactly.
+        </p>
+        <p>
+          This correspondence appears interpretive rather than mechanical. Each
+          imperfection in the outer structure is re-expressed by the inner
+          organism in its own material language. The mechanism by which this
+          alignment occurs remains undocumented.
+        </p>
+        <p>
+          Kaeluni botanists caution against assuming a directional flow of
+          influence. While the outer organism provides structure, the inner
+          exhibits greater adaptive variation over time.
+        </p>
+      </section>
+
+      <section class="section" id="ecology">
+        <h2>Ecology and Growth Patterns</h2>
+        <p>
+          <em>Cereolithus magistralis</em> is rarely found growing untended.
+          Most documented specimens occur near long-established dwellings or
+          sites of sustained habitation. Paired systems developing in isolation
+          tend to show reduced internal complexity and weaker mimetic
+          correspondence.
+        </p>
+        <p>
+          Growth is incremental and uneven. Variations in symmetry are not
+          considered defects, but environmental records comparable to growth
+          rings or sediment layers.
+        </p>
+        <p>
+          Excessive intervention is discouraged. Both organisms respond best to
+          stable conditions and long periods without disturbance.
+        </p>
+        <figure>
+          <img src="img/landscape.png" class="media" />
+          <figcaption>
+            <span class="cap-title">Basalt flats, Kaelune-7</span><br />
+            Primary growth environment of <em>C. magistralis.</em>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="section" id="culture">
+        <h2>Cultural Significance</h2>
+        <p>
+          Among Kaeluni families, <em>Cereolithus magistralis</em> is exchanged
+          as a gesture of recognition between parents and other tusted
+          caregivers. It is given in acknowledgment of steady guidance, patience
+          under pressure, and the quiet labor of raising others well.
+        </p>
+        <p>
+          The cactus is not presented to mark a beginning or an achievement, but
+          to honor an ongoing role. In Kaeluni tradition, such gifts are
+          exchanged between those who share responsibility, as a way of
+          affirming trust in one another's judgment and care.
+        </p>
+        <p>
+          The paired nature of the plant is widely understood but rarely
+          discussed directly.
+        </p>
+        <figure>
+          <img src="img/creature.png" class="media" />
+          <figcaption>
+            <span class="cap-title">Kaeluni mother</span><br />
+            Inhabitant of the basalt flats of Kaelune-7.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="section" id="stewardship">
+        <h2>Use and Stewardship</h2>
+        <p>
+          No formal rituals govern the placement or care of
+          <em>C. magistralis</em>. Specimens are often kept where light shifts
+          gradually across the day, though no orientation is prescribed.
+        </p>
+        <p>
+          The plant is valued less for display than for its continued presence.
+          It is not uncommon for individuals to forget precisely when a
+          particular specimen was placed.
+        </p>
+        <figure>
+          <img src="img/dwelling.png" class="media" />
+          <figcaption>
+            <span class="cap-title">Kaeluni dwelling</span><br />
+            Rounded adobe structure in a residential zone.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="section" id="archive">
+        <h2>Notes from the Archive</h2>
+        <p>
+          Older specimens frequently show increased divergence between inner and
+          outer forms, particularly in coloration and surface rhythm. This
+          divergence is not considered degradation, but maturation.
+        </p>
+        <p>
+          No two paired systems are known to resolve into identical structures.
+        </p>
+        <figure>
+          <img src="img/planet.png" class="media" />
+          <figcaption>
+            <span class="cap-title">Kaelune-7</span><br />
+            Observed from near orbit.
+          </figcaption>
+        </figure>
+      </section>
+
+      <footer>
+        <div>Catalog reference: CM-K7 · public excerpt</div>
+      </footer>
+    </main>
+  </body>
+</html>
