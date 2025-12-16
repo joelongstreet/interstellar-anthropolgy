@@ -1,0 +1,154 @@
+:root {
+  --bg: #f6f1e7; /* warm paper */
+  --ink: #1f1f1f; /* near-black */
+  --muted: #4a4a4a; /* soft text */
+  --rule: rgba(0, 0, 0, 0.12);
+  --card: rgba(255, 255, 255, 0.35);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Bitter", serif;
+  color: var(--ink);
+  background: radial-gradient(
+      1200px 600px at 10% 0%,
+      rgba(0, 0, 0, 0.03),
+      transparent 60%
+    ),
+    radial-gradient(
+      900px 500px at 90% 10%,
+      rgba(0, 0, 0, 0.02),
+      transparent 55%
+    ),
+    var(--bg);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+}
+
+.wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 28px 18px 60px;
+}
+
+header {
+  padding-top: 8px;
+}
+
+.kicker {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+h1 {
+  margin: 10px 0 6px;
+  font-size: 34px;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.latin {
+  margin: 0 0 14px;
+  font-size: 18px;
+  color: var(--muted);
+}
+
+.meta {
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  padding: 14px 0;
+  margin: 18px 0 22px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.meta strong {
+  color: var(--ink);
+  font-weight: 650;
+}
+.meta .row {
+  margin: 6px 0;
+}
+
+.section {
+  margin-top: 22px;
+}
+
+.section h2 {
+  margin: 0 0 8px;
+  font-size: 13px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+p {
+  margin: 0 0 12px;
+  font-size: 16px;
+}
+
+.gallery {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+figure {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+figcaption {
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--muted);
+  max-width: 92%;
+}
+
+.cap-title {
+  font-style: italic;
+  color: var(--ink);
+}
+
+footer {
+  margin-top: 30px;
+  padding-top: 16px;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 13px;
+}
+
+@media (max-width: 420px) {
+  h1 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .wrap {
+    padding: 22px 16px 54px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto !important;
+  }
+}
+
+.media {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: transparent;
+  filter: grayscale(0.5);
+}
